@@ -65,7 +65,7 @@ function del(index){
        
     
         localStorage.setItem("users", JSON.stringify(allElements));
-        display();
+        // display();
     
         window.location.reload();
     }else{
@@ -80,7 +80,7 @@ function edit(index){
 
     allElements[index].name = prompt("Enter new name:");
     allElements[index].country = prompt("Enter new country:");
-    allElements[index].number = prompt("Enter new number:");
+    allElements[index].tel = prompt("Enter new number:");
 
     localStorage.setItem("users", JSON.stringify(allElements));
     window.location.reload(); 
